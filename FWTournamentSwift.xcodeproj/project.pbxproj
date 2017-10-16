@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		996A87A51F94DD7D00B07388 /* FWTournamentSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 996A87A31F94DD7D00B07388 /* FWTournamentSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		996A87AC1F94DE8300B07388 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A87AB1F94DE8300B07388 /* Tournament.swift */; };
+		996A87D41F94EA2800B07388 /* RoundRobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A87D31F94EA2700B07388 /* RoundRobbin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		996A87A01F94DD7D00B07388 /* FWTournamentSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FWTournamentSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		996A87A31F94DD7D00B07388 /* FWTournamentSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWTournamentSwift.h; sourceTree = "<group>"; };
 		996A87A41F94DD7D00B07388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		996A87AB1F94DE8300B07388 /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		996A87D31F94EA2700B07388 /* RoundRobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRobbin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +51,9 @@
 			isa = PBXGroup;
 			children = (
 				996A87A31F94DD7D00B07388 /* FWTournamentSwift.h */,
+				996A87AB1F94DE8300B07388 /* Tournament.swift */,
 				996A87A41F94DD7D00B07388 /* Info.plist */,
+				996A87D31F94EA2700B07388 /* RoundRobbin.swift */,
 			);
 			path = FWTournamentSwift;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					996A879F1F94DD7D00B07388 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996A87D41F94EA2800B07388 /* RoundRobbin.swift in Sources */,
+				996A87AC1F94DE8300B07388 /* Tournament.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 		996A87A91F94DD7D00B07388 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -267,6 +277,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = carlos.torres.FWTournamentSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -274,6 +285,7 @@
 		996A87AA1F94DD7D00B07388 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
