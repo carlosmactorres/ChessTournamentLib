@@ -8,16 +8,18 @@
 
 import Foundation
 
+public typealias pairData = (board: Int, white: Int, black: Int)
 
 public class Tournament{
-    
+     
+    public var name: String = ""
     public init() {
-        
     }
     
-    public func roundRobbin(_ players : Int, _ rounds : Int){
-        let T = RoundRobbin(players)
-        T.round(rounds)
+    
+    public func roundRobbin(_ players : Int, _ round : Int)->[pairData]{
+        //let R = RoundRobin(players, round)
+        return RoundRobbin(players, round).pairing
     }
 
 }

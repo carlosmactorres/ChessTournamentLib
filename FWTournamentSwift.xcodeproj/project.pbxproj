@@ -10,6 +10,8 @@
 		996A87A51F94DD7D00B07388 /* FWTournamentSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 996A87A31F94DD7D00B07388 /* FWTournamentSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		996A87AC1F94DE8300B07388 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A87AB1F94DE8300B07388 /* Tournament.swift */; };
 		996A87D41F94EA2800B07388 /* RoundRobbin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A87D31F94EA2700B07388 /* RoundRobbin.swift */; };
+		996A87DA1F94FC5A00B07388 /* ObjT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A87D91F94FC5A00B07388 /* ObjT.swift */; };
+		996A87DE1F95068600B07388 /* ObjRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A87DD1F95068600B07388 /* ObjRound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		996A87A41F94DD7D00B07388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		996A87AB1F94DE8300B07388 /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
 		996A87D31F94EA2700B07388 /* RoundRobbin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRobbin.swift; sourceTree = "<group>"; };
+		996A87D91F94FC5A00B07388 /* ObjT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjT.swift; sourceTree = "<group>"; };
+		996A87DD1F95068600B07388 /* ObjRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjRound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				996A87AB1F94DE8300B07388 /* Tournament.swift */,
 				996A87A41F94DD7D00B07388 /* Info.plist */,
 				996A87D31F94EA2700B07388 /* RoundRobbin.swift */,
+				996A87D91F94FC5A00B07388 /* ObjT.swift */,
+				996A87DD1F95068600B07388 /* ObjRound.swift */,
 			);
 			path = FWTournamentSwift;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996A87DE1F95068600B07388 /* ObjRound.swift in Sources */,
+				996A87DA1F94FC5A00B07388 /* ObjT.swift in Sources */,
 				996A87D41F94EA2800B07388 /* RoundRobbin.swift in Sources */,
 				996A87AC1F94DE8300B07388 /* Tournament.swift in Sources */,
 			);

@@ -8,13 +8,16 @@
 
 import Foundation
 
+
+
 class RoundRobbin {
     let nPlayers : Int
     let oddPlayers : Bool
     let rounds : Int
-    let boards : Int
+    let nboards : Int
+    var pairing: [pairData]  =  Array()
     
-    init(_ players: Int) {
+    init(_ players: Int, _ r: Int) {
         
         if(players%2 != 0){
             oddPlayers = true
@@ -25,9 +28,12 @@ class RoundRobbin {
             nPlayers = players
         }
         rounds = nPlayers - 1
-        boards = nPlayers / 2
-        print("the numbers of players is \(oddPlayers ? nPlayers - 1 : nPlayers)")
-        print("Tournament will have \(rounds) rounds and \( boards) boards")
+        nboards = nPlayers / 2
+        //print("the number of players is \(oddPlayers ? nPlayers - 1 : nPlayers)")
+        //print("Tournament will have \(rounds) rounds and \( nboards) nboards")
+        
+      let _ =  round(r)
+        
         
     }
     
@@ -37,32 +43,39 @@ class RoundRobbin {
     }
     
     func round(_ round:Int){
+        
+        
         if round < nPlayers{
-            print("Round Nº \(round)")
+            //print("Round Nº \(round)")
             
             
-            for m in 1 ... boards{
+            for m in 1 ... nboards{
                 var whites ,  blacks : Int
                 if round % 2 != 0{
                     whites = filter(m + (round-1) / 2)
                     
-                    blacks = (m==1) ? nPlayers : filter(boards + (round - 1) / 2 + boards - m  + 1)
+                    blacks = (m==1) ? nPlayers : filter(nboards + (round - 1) / 2 + nboards - m  + 1)
                     
                 }
                 else{
                     
                     
-                    whites = (m==1) ? nPlayers : filter(boards + m + (round/2) - 1)
-                    blacks = boards + round/2 - m + 1
+                    whites = (m==1) ? nPlayers : filter(nboards + m + (round/2) - 1)
+                    blacks = nboards + round/2 - m + 1
                     
                     
                     
                 }
-                print("\(whites) - \(blacks)")
+                pairing.append((board: m, white: whites, black: blacks))
+                //print("\(whites) - \(blacks)")
+                
             }
         }
         else{
             print("incorrect round's number")
         }
+        
+        
+        
     }
 }
